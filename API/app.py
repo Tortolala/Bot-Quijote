@@ -2,6 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 def predict_text(seed, length):
 
     dummy_prediction = 'a'*length
@@ -9,9 +10,11 @@ def predict_text(seed, length):
 
     return text
 
+
 @app.route("/")
 def hello():
     return "Hola, I'm Bot Quijote de la Mancha."
+
 
 @app.route("/predict/<string:seed>/<int:length>", methods=["GET"])
 def predict(seed, length):
