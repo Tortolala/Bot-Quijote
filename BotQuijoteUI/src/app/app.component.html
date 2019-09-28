@@ -10,10 +10,10 @@
     </div>
     <div>
       <p class="text-dark"> Seed </p>
-      <input class="input-lg"  [(ngModel)]="seed" ngDefaultControl>
+      <input class="input-lg" [(ngModel)]="seed" ngDefaultControl>
       <br><br>
       <p class="text-dark"> Length </p>
-      <input class="input-lg"  [(ngModel)]="length" ngDefaultControl>
+      <input class="input-lg" type="number" [(ngModel)]="length" ngDefaultControl>
 
       <br><br>
       <button class="btn btn-primary" (click)="getPrediction()"> Generate </button>
