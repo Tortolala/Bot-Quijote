@@ -8,6 +8,7 @@ import numpy as np
 
 app = Flask(__name__)
 CORS(app)
+app.config['JSON_AS_ASCII'] = False
 
 
 train_on_gpu = torch.cuda.is_available()
@@ -122,4 +123,4 @@ def predict(seed, length):
 
 
 if __name__ == '__main__':
-    app.run(port=80)
+    app.run(host="0.0.0.0", port=80)
