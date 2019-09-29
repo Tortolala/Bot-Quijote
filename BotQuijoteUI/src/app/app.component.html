@@ -1,7 +1,13 @@
 <div class="container">
-  <div class="jumbotron">
-    <!-- <h1>Welcome</h1> -->
+  <div class="jumbotron" style="padding-bottom: 10px;">
     <h2> AI: Project 1 </h2>
+    <p class="text-dark text-break text-justify">
+      The following demo is the result of training a recurrent nueral network with the
+      book "El ingenioso hidalgo don Quijote de la Mancha" from the spanish writer Miguel de Cervantes Saavedra.
+      In the input section, <i> seed </i> is the initial text you want to generate new text from and <i> length </i>
+      is the number of characters you would like to be generated. Enjoy and remember: it is just a newborn baby yet,
+      learning still on its way.
+    </p>
   </div>
   <div class="panel panel-primary">
     <div class="panel-heading"> RNN Model Showcase </div>
@@ -9,6 +15,7 @@
       <h3> Bot Quijote de la Mancha </h3>
     </div>
     <div>
+      <br>
       <p class="text-dark"> Seed </p>
       <input class="input-lg" [(ngModel)]="seed" ngDefaultControl>
       <br><br>
@@ -21,7 +28,7 @@
 
     <br><br>
     <div class="border-light">
-      <p class="text-primary text-break"> {{prediction}} </p>
+      <p class="text-primary text-break text-justify"> {{prediction}} </p>
     </div>
 
   </div>
