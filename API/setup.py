@@ -8,6 +8,7 @@ setup(
     install_requires=[
         'Flask (==1.1.1)',
         'Flask-Cors (==3.0.8)',
-        'torch (==1.1.0.post2)'
+        'torch (==1.2.0)',
+        'numpy (>1.16.2)'
     ]
 )
