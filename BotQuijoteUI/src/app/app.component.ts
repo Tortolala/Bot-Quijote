@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
 
   title = 'Bot Quijote';
-  baseUrl: string = 'http://127.0.0.1:5000'
+  baseUrl: string = 'http://ec2-3-85-162-210.compute-1.amazonaws.com'
   seed: string;
   length: number;
   prediction: string;
